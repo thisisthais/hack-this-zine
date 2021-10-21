@@ -21,13 +21,23 @@
         margin-top: 1em;
         padding-top: 1em;
         color: #333;
-        width: 100vw;
         align-self: center;
         text-align: center;
       }
 
-      strong {
+      h1 {
+        width: 100vw;
+      }
+
+      strong, b {
         color: #333;
+        -webkit-font-smoothing: antialiased;
+        display: inline;
+      }
+
+      img {
+        margin: 1em 0;
+        width: 100%;
       }
 
       body {
@@ -39,27 +49,29 @@
         font-size: 1.2em;
       }
 
-      code,
+      textarea {
+        min-height: 10ch;
+        margin: 1em 0 2em 0;
+      }
+
+      /* code,
       pre {
         background: #f5f7f9;
-        border-bottom: 1px solid #d8dee9;
-        color: #a7adba;
+        color: #555;
       }
 
       code {
         padding: 2px 4px;
         vertical-align: text-bottom;
-      }
-
-      pre {
-        padding: 1em;
-        border-left: 2px solid #69c;
-      }
+      } */
 
       a {
         color: #e81c4f;
       }
     </style>
+    <link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.3.1/styles/default.min.css">
+    <script src="//unpkg.com/@highlightjs/cdn-assets@11.3.1/highlight.min.js"></script>
+<script src="//unpkg.com/@highlightjs/cdn-assets@11.3.1/highlight.min.js"></script>
   </head>
   <body>
     <!-- <img
@@ -67,9 +79,44 @@
     /> -->
     <p>Intro TBD...</p>
     <h1>LET THE SORCERY COMMENCE</h1>
+    <p>First, we must tap into the source (code).</p>
     <p>
-      Right-click >> RIGHT HERE << and select "Inspect" for Chrome or "Inspect
-      Here" for Firefox
+      Right-click <strong>>> RIGHT HERE <<</strong> and select "Inspect".
+      <!-- or "Inspect Here" if you're using Firefox. -->
+      You should see something like this:
+      <img src="https://i.ibb.co/grpDsV9/first-Web-Inspector-Placeholder.png" />
+      <!-- how am i going to get an image that's representitive of what this section looks like without first having the image... -->
+      That panel on the right is the Web Inspector, also called Developer Tools.
+      Don't worry if yours doesn't look exactly like the image. Also, don't
+      worry if this looks overwhelming... it is overwhelming! The Web Inspector is an
+      incredibly powerful tool with dozens of features, but we can focus on a
+      small number of them for now. Over time, you can learn to harness all the powers this tool offers.
+    </p>
+    <p>
+      What's important for now is to make sure we are in the
+      <b>Elements</b> tab and we can see the line that says
+      <pre>
+        <code class="language-html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>>> RIGHT HERE <<<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span></code>
+      </pre>
+      <img src="https://i.ibb.co/9ThrW58/Elements-Highlight.jpg" />
+      Once you're situated, let's take a moment to take in what we're seeing in the <b>Elements</b> tab. 
+      Some of the text we see, we can recognize as being the content of this zine, for example: 
+      <ul>
+        <li>"LET THE SORCERY COMMENCE"</li>
+        <li>"First, we must tap into the source"</li>
+      </ul>
+      Some of what we can see may be unfamiliar to you:
+      <ul>
+        <li>&lt;h1></li>
+        <li>&lt;p/></li>
+        <li>&lt;strong></li>
+      </ul>
+      These are what we call 'tags' in HTML. HTML stands for Hypertext Markup Language.
+    </p>
+    <p>
+      <h2>What are your guesses about the relationship between these two elements?</h2>
+      <textarea></textarea>
+      With your guess in mind, let's start exploring! What happens if you double click on a piece of content?
     </p>
   </body>
 </html>

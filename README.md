@@ -17,3 +17,9 @@ Here's where I'm at, just some sample images:
 ![](./images/10-10-21-checkin.jpeg)
 
 Next big task: how can I save changes made through the Web Inspector to the original file?
+
+### **October 21st, 2021 (Thursday)**
+
+I'm back with some dedicated Final Project work time! I originally wanted to embed images into the HTML file because I didn't want to rely on having an internet connection. BUT... I think showing newcomers how to link to an image is much easier than showing how to use the terminal to do base64 encoding. So I'm going back to linked images for now.
+
+I got some work done on basic CSS styling following [Brutalist Web Design principles](https://brutalist-web.design/) (thanks to Paulina for sharing that link!) and [Web Design in 4 Minutes](https://jgthms.com/web-design-in-4-minutes/). I also skipped writing the Intro (it's so important so feels hard to start with) and started writing the very beginning of opening the Web Inspector! Which is also important and I'm having a little bit of "nothing sounds good enough" thoughts but pushing through. Managed to write a couple of paragraphs. I'm particularly happy with an idea I had to ask questions and have a &lt;textarea /> for the reader's response! It's not going anywhere but... neither do 95% of my notes I write when asked to write down a response to something in a class/meeting.
