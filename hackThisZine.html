@@ -31,13 +31,16 @@
 
       strong, b {
         color: #333;
-        -webkit-font-smoothing: antialiased;
         display: inline;
       }
 
       img {
         margin: 1em 0;
         width: 100%;
+      }
+
+      p {
+        position: relative;
       }
 
       body {
@@ -54,38 +57,66 @@
         margin: 1em 0 2em 0;
       }
 
-      /* code,
-      pre {
+      code {
+        padding: 20px;
+        margin: 20px;
+        vertical-align: text-bottom;
         background: #f5f7f9;
         color: #555;
+        display: block;
+        font-family: monospace;
+        border: 1px solid #999;
       }
-
-      code {
-        padding: 2px 4px;
-        vertical-align: text-bottom;
-      } */
 
       a {
         color: #e81c4f;
       }
 
+      strong, b, table, tr, th {
+        -webkit-font-smoothing: antialiased;
+      }
+
+      table {
+        width: 80vw;
+        align-self: center;
+        table-layout: fixed;
+        border: 2px solid #999;
+        padding: 20px;
+        margin: 30px;
+        border-collapse: collapse;
+      }
+
+      thead {
+        border-bottom: 2px dashed #999;
+        font-size: 1.2em;
+      }
+
+
+      th {
+        max-width: 33%; 
+        word-wrap: break-word;
+        font-size: 0.8em;
+      }
+
       .purple {
         color: darkorchid;
       }
+
+      .reset {
+        width: unset;
+        padding: 0;
+        margin: 0;
+        display: block;
+      }
     </style>
     <link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.3.1/styles/default.min.css">
-    <script src="//unpkg.com/@highlightjs/cdn-assets@11.3.1/highlight.min.js"></script>
-<script src="//unpkg.com/@highlightjs/cdn-assets@11.3.1/highlight.min.js"></script>
   </head>
   <body>
-    <!-- <img
-      src="https://i.pinimg.com/564x/86/ee/2f/86ee2fceb76d3b084b0cb62c9eab7b5d.jpg"
-    /> -->
     <p>Intro TBD...</p>
     <h1>LET THE SORCERY COMMENCE</h1>
     <p>First, we must tap into the source (code).</p>
     <p>
-      Right-click <strong>>> RIGHT HERE <<</strong> and select "Inspect".
+      Right-click <strong>☛ RIGHT HERE ☚</strong> and select "Inspect".
       <!-- or "Inspect Here" if you're using Firefox. -->
       You should see something like this:
       <img src="https://i.ibb.co/grpDsV9/first-Web-Inspector-Placeholder.png" />
@@ -99,9 +130,7 @@
     <p>
       What's important for now is to make sure we are in the
       <b>Elements</b> tab and we can see the line that says
-      <pre>
-        <code class="language-html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>>> RIGHT HERE <<<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span></code>
-      </pre>
+        <code><span class="purple">&lt;strong&gt;</span>☛ RIGHT HERE ☚<span class="purple">&lt;/strong&gt;</span></code>
       <img src="https://i.ibb.co/9ThrW58/Elements-Highlight.jpg" />
       Once you're situated, let's take a moment to take in what we're seeing in the <b>Elements</b> tab. 
       Some of the text we see, we can recognize as being the content of this zine, for example: 
@@ -109,18 +138,16 @@
         <li>"LET THE SORCERY COMMENCE"</li>
         <li>"First, we must tap into the source"</li>
       </ul>
-      Some of what we can see may be unfamiliar to you:
+    </p>
+    Some of what we can see may be unfamiliar to you:
       <ul>
         <li><span class="purple">&lt;h1></span></li>
         <li><span class="purple">&lt;p/></span></li>
         <li><span class="purple">&lt;strong></span></li>
       </ul>
-    </p>
-    <p>
       <h2>What are your guesses about the relationship between these two elements?</h2>
       <textarea></textarea>
       With your guess in mind, let's start exploring!
-    </p>
     <p>
       What happens if you double click on a piece of content? 
       You should be able to edit or fully replace that piece of content! Try changing something previously written in this zine. 
@@ -128,14 +155,161 @@
       Don't worry, the changes aren't permanent and if you ever want to go to the original version of this zine you can refresh 
       the page.
     </p>
-    <details>
-      <summary><strong>HTML History (if you're interested)</strong></summary>
-      <p>HTML stands for Hypertext Markup Language. Historically, markup languages are used to annotate
-        text content (for example, a manuscript) to let the typesetter know how different parts of the text
-        should look once it's printed. For example, the markup language can note which parts of the text should 
-        be bolded, italicized, be in a different font, be a section header, and so on.
-        <img src="https://i.ibb.co/NWsTJsX/manuscript.png" />
-      </p>
-    </details>
+    <h2>Some HTML History</h2>
+    <p>HTML stands for Hypertext Markup Language. Historically, markup languages are used to annotate
+      text content (for example, a manuscript) to let the typesetter know how different parts of the text
+      should look once it's printed. For example, the markup language can note which parts of the text should 
+      be bolded, italicized, be in a different font, be a section header, and so on.
+      <img src="https://i.ibb.co/NWsTJsX/manuscript.png" />
+    </p>
+    <h2>Exploring HTML Tags</h2>
+    <p>Earlier, we looked at some of the HTML code that makes this zine. Some of it was easy to recognize as the content of the zine. 
+      Other parts were less familiar, they looked like this:
+    </p>
+    <ul>
+      <li><span class="purple">&lt;h1></span></li>
+      <li><span class="purple">&lt;p/></span></li>
+      <li><span class="purple">&lt;strong></span></li>
+    </ul>
+    <p>
+      These are called <strong>tags</strong>!
+      <!-- Add hover-definition functionality? -->
+      Just like a manuscript markup has symbols that communicate to the typesetter the purpose of a 
+      piece of content and how it should look once printed, <strong>HTML tags are symbols that tell your web browser the purpose of a 
+      piece of content and how it should be displayed.</strong>
+    </p>
+    <h2>What do you imagine might be a useful HTML tag? What type of content would it be paired with?</h2>
+    <textarea></textarea>
+    <p>
+      There are way too many different types of HTML tags to cover here, but you can find out about all of them within 
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Mozilla's Developer Documentation</a>. 
+      Mozilla's Web Docs are a great reference source not just for HTML, but for many other web technology you may be curious 
+      about, like CSS and JavaScript.
+      <!-- something about next steps here? -->
+    </p>
+    <p>
+      Let's take a look at a few common HTML tags
+      <table>
+        <thead>
+          <tr>
+            <th>HTML</th>
+            <th>Tag Name</th>
+            <th colspan="1">Rendering</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              <code>
+                <span class="purple">&lt;p&gt;&lt;/p&gt;</span>
+              </code>
+            </th>
+            <th>paragraph</th>
+            <th>This is a paragraph! It's a short one, but still.</th>
+          </tr>
+          <tr>
+            <th>
+              <code>
+                <span class="purple">&lt;h1&gt;&lt;/h1&gt</span>
+                <br/>
+                <span class="purple">&lt;h2&gt;&lt;/h2&gt</span>
+                <br/>
+                <span class="purple">&lt;h3&gt;&lt;/h3&gt</span>
+                <br/>
+                <span class="purple">...</span>
+              </code>
+            </th>
+            <th>header</th>
+            <th>
+              <h1 class="reset">I'm a h1!</h1>
+              <h2 class="reset">I'm a h2!</h2>
+              <h3 class="reset">I'm a h3!</h3>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <code>
+                <span class="purple">&lt;div&gt;&lt;/div&gt</span>
+              </code>
+            </th>
+            <th>
+              content division
+            </th>
+            <th>
+              <div style="background-color: cornsilk; padding: 10px; margin: 10px; border: 5px dotted olivedrab">I'm <em>inside</em> a div. The div doesn't have any visual attributes unless styled to have some. For example, this one has a border and a background.</div>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <code>
+                <span class="purple">&lt;strong&gt;&lt;/strong&gt</span>
+              </code>
+            </th>
+            <th>
+              strong
+            </th>
+            <th>I'm very <strong>important</strong></th>
+          </tr>
+          <tr>
+            <th>
+              <code>
+                <span class="purple">&lt;em&gt;&lt;/em&gt</span>
+              </code>
+            </th>
+            <th>
+              emphasis
+            </th>
+            <th>I'm also <em>important</em>, but more emphatically</th>
+          </tr>
+          <tr>
+            <th>
+              <code>
+                <span class="purple">&lt;img src="image_url"&gt;</span>
+              </code>
+            </th>
+            <th>
+              image
+            </th>
+            <th><img src="https://pbs.twimg.com/profile_banners/1864075333/1598733485/1500x500" style="width: 90%"></th>
+          </tr>
+          <tr>
+            <th>
+              <code>
+                <span class="purple">
+                  <span style="margin-left: -40px">&lt;ul&gt;</span>
+                  <br/>
+                  <span style="margin-left: 20px">&lt;li&gt;&lt;/li&gt</span>
+                  <br/>
+                  <span style="margin-left: 20px">&lt;li&gt;&lt;/li&gt</span>
+                  <br/>
+                  <span style="margin-left: -40px">&lt;/ul&gt;</span>
+                </span>
+              </code>
+            </th>
+            <th>
+              unordered list and list items
+            </th>
+            <th>
+              <ul style="text-align: left">
+                <li>We're in a list!</li>
+                <li>We're the list elements</li>
+              </ul>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <code>
+                <span class="purple">&lt;a href="any_url"&gt;</span>
+              </code>
+            </th>
+            <th>
+              anchor
+            </th>
+            <th><a href="https://twitter.com/tfivefifty" target="_blank">I'm an anchor! I link to anything with a URL</a></th>
+          </tr>
+        </tbody>
+      </table>
+        
+    </p>
   </body>
 </html>
