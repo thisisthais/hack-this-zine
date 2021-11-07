@@ -27,3 +27,5 @@ I got some work done on basic CSS styling following [Brutalist Web Design princi
 ### **October 28th, 2021 (Thursday)**
 What a gray and rainy week... my productivity has tanked, all I want to do is stay in bed. But I'm gonna push myself to work at least a little on this zine so I don't get too far behind. I wrote like two more paragraphs, including using a <details> tag for some optional HTML history. Not sure if I'll keep that as an optional aside but want to experiment with it.
 
+### **November 7th, 2021 (Sunday)**
+I got a good chunk of work done today! What's more, I feel like both T550 readings for the week (which I also did today lol) gave me important guidance. You can read about that in my [design journal](https://docs.google.com/presentation/d/1PLZPft1_OtJ2aJ3QLuUW9wevT_eCZrI2w0Z5DpJZZdI/edit#slide=id.g100ac8f3475_0_0). I wrapped up the HTML tags section, including a table of some common tags. I added 4 questions to the reader that I'm really satisfied with! And I did a few tweaks here and there, changed some wording, changed some CSS, stuff like that.
