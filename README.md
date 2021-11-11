@@ -29,3 +29,6 @@ What a gray and rainy week... my productivity has tanked, all I want to do is st
 
 ### **November 7th, 2021 (Sunday)**
 I got a good chunk of work done today! What's more, I feel like both T550 readings for the week (which I also did today lol) gave me important guidance. You can read about that in my [design journal](https://docs.google.com/presentation/d/1PLZPft1_OtJ2aJ3QLuUW9wevT_eCZrI2w0Z5DpJZZdI/edit#slide=id.g100ac8f3475_0_0). I wrapped up the HTML tags section, including a table of some common tags. I added 4 questions to the reader that I'm really satisfied with! And I did a few tweaks here and there, changed some wording, changed some CSS, stuff like that.
+
+### **November 11th, 2021 (Thursday)**
+I added the little hands on HTML section! I'm feeling like it's a little bit too "guided" and not enough "open-ended" but I'm not sure how to change it to make it more open-ended and still accessible.
