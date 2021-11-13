@@ -1,0 +1,113 @@
+body {
+  max-width: 60ch;
+  margin: 0 auto;
+  font-family: 'Monaco';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Georgia';
+  margin-top: 1em;
+  padding-top: 1em;
+  color: #333;
+  align-self: center;
+  text-align: center;
+}
+
+h1 {
+  width: 100vw;
+}
+
+strong,
+b {
+  color: #333;
+  display: inline;
+}
+
+img {
+  margin: 1em 0;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  padding: 2ch;
+  color: #555;
+  font-size: 1.2em;
+}
+
+textarea {
+  min-height: 10ch;
+  margin: 1em 0 2em 0;
+}
+
+code {
+  padding: 20px;
+  margin: 20px;
+  vertical-align: text-bottom;
+  background: #f5f7f9;
+  color: #555;
+  display: block;
+  font-family: monospace;
+  border: 1px solid #999;
+}
+
+a {
+  color: #e81c4f;
+}
+
+strong,
+b,
+table,
+tr,
+th {
+  -webkit-font-smoothing: antialiased;
+}
+
+span.definable {
+  text-decoration: underline wavy #e81c4f;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+img.definable {
+  border: 3px dashed #e81c4f;
+  padding: 2ch;
+}
+
+.tagsTable {
+  width: 80vw;
+  align-self: center;
+  table-layout: fixed;
+  border: 2px solid #999;
+  padding: 20px;
+  margin: 30px;
+  border-collapse: collapse;
+}
+
+thead {
+  border-bottom: 2px dashed #999;
+  font-size: 1.2em;
+}
+
+th {
+  max-width: 33%;
+  word-wrap: break-word;
+  font-size: 0.8em;
+}
+
+.purple {
+  color: darkorchid;
+}
+
+.reset {
+  width: unset;
+  padding: 0;
+  margin: 0;
+  display: block;
+}

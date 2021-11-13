@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wild World of Websites</title>
+    <style></style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@highlightjs/cdn-assets@11.3.1/styles/default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/themes/light-border.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <h1 style="margin-bottom: 0">The Wild Word of Websites</h1>
+    <h2 style="margin-top: 0">An HTML & CSS Watching Workbook</h2>
+    <p>Intro TBD...</p>
+    <h1>Tools of the Trade</h1>
+    <div>
+      <img
+        alt="A magnifying glass being held up to a piece of pampa grass in a field"
+        src="https://cdn.pixabay.com/photo/2018/10/16/10/01/magnifying-glass-3751053_960_720.jpg"
+        style="width: 50%; float: left; margin: 0 2ch 0 0"
+        id="myImage"
+      />
+      <p style="margin-top: 0">
+        To get a good look at a website, we need to go beyond what we see with
+        just our eyes. We need to take a closer look at what lies underneath;
+        the code.
+        <br />
+        <br />
+        Our main tool is going to be the
+        <span class="definable" id="webInspector">Web Inspector</span>.
+        <br />
+        <br />
+        Right-click <strong>☛ RIGHT HERE ☚</strong> and select "Inspect".
+        <br />
+        <br />
+        You should see something like this:
+        <img
+          src="https://i.ibb.co/q9xpNmQ/Screen-Shot-2021-11-13-at-3-49-13-PM.png"
+          alt="screenshot of this page with the web inspector open to the right"
+          class="definable"
+          id="WIScreenshot1"
+        />
+      </p>
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+      tippy('#webInspector', {
+        content: 'Also called Developer Tools',
+        placement: 'auto',
+        theme: 'light-border',
+      });
+
+      tippy('#WIScreenshot1', {
+        content:
+          "<p>This looks like A LOT of information right now, but don't worry. We will soon learn to navigate this tool well.<br/><br/> For now, just be sure you're in the <strong>Elements</strong> tab.</p>",
+        placement: 'auto',
+        theme: 'light-border',
+        allowHTML: true,
+      });
+    </script>
+  </body>
+</html>
