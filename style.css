@@ -44,6 +44,7 @@ body {
 textarea {
   min-height: 10ch;
   margin: 1em 0 2em 0;
+  width: 100%;
 }
 
 code {
@@ -63,20 +64,31 @@ a {
 
 strong,
 b,
+em,
 table,
 tr,
 th {
   -webkit-font-smoothing: antialiased;
 }
 
+li {
+  list-style-type: circle;
+}
+
 span.definable {
   text-decoration: underline wavy #e81c4f;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
+  color: #333;
 }
 
 img.definable {
   border: 3px dashed #e81c4f;
+  padding: 2ch;
+}
+
+.activity {
+  border: 10px double #e81c4f;
   padding: 2ch;
 }
 
