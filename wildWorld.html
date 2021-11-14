@@ -76,20 +76,26 @@
         <p>
           Let's try to change content through the Web Inspector. Remember, you can do so by double-clicking.
           <img src="https://i.ibb.co/Qfcm640/Screen-Shot-2021-11-13-at-4-20-50-PM.png">
-          You have to hit enter after making a change.
+          <!-- You have to hit enter after making a change.
           Don't worry, the changes aren't permanent and if you ever want to go to the original version of this page you just need to refresh.
           <br />
-          <br />
+          <br /> -->
+          <p>Try editing this right here:</p>
           <ul>
             <strong>My Perfect Three-Course Meal</strong>
             <li>???????</li>
             <li>:::::::</li>
             <li>^^^^^^^</li>
           </ul>
+          <br />
+          <p>You can change content on almost any website. Go out and explore and maybe send a friend a funny screenshot!</p>
+          <img src="https://i.ibb.co/rwBjW3p/Screen-Shot-2021-11-14-at-10-22-32-AM.png" />
+          <img src="https://i.ibb.co/R66n4x4/Screen-Shot-2021-11-14-at-10-37-08-AM.png" />
+          <img src="https://i.ibb.co/xjk0RGX/Screen-Shot-2021-11-14-at-10-49-16-AM.png" />
         </p>
       </div>
       </div>
-      <h1>Exploring HTML Tags</h1>
+      <h1>Exploring Structure: HTML</h1>
       <p>
         HTML stands for <strong>Hypertext Markup Language</strong>. Historically, markup languages were used 
         to annotate text content (for example, a manuscript) to let the typesetter know how different parts of 
@@ -253,12 +259,62 @@
       </p>
       <div class="activity">
         <h3 style="padding: 0;">Activity #2: Editing Tags</h3>
-        <p>Here's a series of challenges about some of the HTML elements above. Let's spend some time 
-          tinkering with them through the Web Inspector! This section (this whole zine, really) is totally remixable!
-          You can make changes in the Web Inspector and see them reflected right here.</p>
+        <p>Let's spend some time tinkering with tags through the Web Inspector! Try these to start:</p>
         <h6>i'm so small... i wish i was big and important</h6>
         <strong>I WISH I WAS JUST A NORMAL PARAGRAPH</strong>
+        <br />
+        <img src="my image URL is broken... can you replace it with one that works?" />
+        <br />
+        <br />
+        <img src="https://i.ibb.co/VMVDDtm/Screen-Shot-2021-11-14-at-11-04-02-AM.png" />
+        <p>You can also edit properties of HTML tags. For example, if a form submission button is disabled because you missed the deadline to upload your school ID photo, you can just delete that attribute and submit your photo anyway!</p>
+        <img src="https://i.ibb.co/hXgQdcp/Screen-Shot-2021-11-14-at-11-13-16-AM.png" />
+        <p>It's also possible to use the Web Inspector to fully delete tags.</p>
+        <img src="https://i.ibb.co/PCb18sc/Screen-Shot-2021-11-14-at-10-58-30-AM.png" />
+        <p>Deleting HTML can come in handy in many situations, like getting past <span class="definable" id="paywalls">paywalls.</span></p>
+        What can you try to change out there in the wild wild web?
       </div>
+      <h2>What website did try editing?</h2>
+      <input type="text">
+      <h2>What did you change?</h2>
+      <textarea></textarea>
+      <h2>Add a screenshot of your edit here:</h2>
+      <img src="add image URL here" />
+      <h1>Exploring Styling: CSS</h1>
+      <p>
+        Think about the websites you visit often. How similar do they look? How can the same HTML tags <em>look</em> so diferent on different sites?
+        <h2 style="margin: 0">How can this be an <span class="purple">&lt;h2&gt;</span></h2>
+        <h2 style="font-family:'Courier New'; color:cadetblue; font-size: 0.7em;">And this is also an <span class="purple">&lt;h2&gt;</span></h2>
+        But they look totally different? Let's <span style="margin: 2ch auto 0 auto">ﾟ･✧･ﾟINSPECTﾟ･✧･ﾟ</span>
+        <img src="https://i.ibb.co/BVFCLR1/Screen-Shot-2021-11-14-at-11-47-33-AM.png" />
+      </p>
+      <p>
+        The key is in the "style" attribute on the <span class="purple">&lt;h2&gt;</span> tag. In the style attribute, you can write CSS.
+        <strong>CSS stands for Cascading Style Sheets and it's the language that we can use to better define how elements on a webpage should look.</strong>
+        <br />
+        <br />
+        It's easier to see an element's styling if you look at the <span class="definable" id="StylesTab">Styles tab</span> near the bottom.
+      </p>
+      <img style="width: 50%" src="https://i.ibb.co/WPx9cjr/Screen-Shot-2021-11-14-at-11-47-51-AM.png" />
+      <p>You can do a lot of styling right in the Styles tab for an element. You can edit one of its' property, delete one, or add a whole new property.</p>
+      <div class="activity">
+        <h3 style="padding: 0;">Activity #3: Editing CSS</h3>
+        <p style="color: #333">Here's a list of <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">named colors in CSS</a>. Change this line to any color you like!</p>
+        <br />
+        <p style="background-color: darkseagreen;">You can also add or change a background color to elements. What's your favorite color?</p>
+        <br />
+        <p style="background-color: sandybrown; border-style: dashed; border-color: seagreen; border-width: 10px;">You can create a lot of visual interest with just a border and a background. Refer to the Mozilla documentation to learn about all the possibilities for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">borders</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" target="_blank">backgrounds</a> and get creative here!</p>
+        <br />
+        <p style="border: 5px outset pink; outline: 5px solid khaki; box-shadow: 0 0 0 20px skyblue; border-radius: 5px; padding: 10px; margin: 10px; outline-offset: 10px">I have a border, an outline, and a box shadow. Cool right?? Check out my styles in the inspector! What looks fun to change?</p>
+        <br />
+        <p style="cursor: grab">You can style so many things with CSS, including the cursor. Hover over me to see!</p>
+      </div>
+      <p>
+        Even people who have been coding for the web for years don't know all the possible CSS properties. When in doubt, you can always refer to this 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference" target="_blank">list of most common CSS properties</a>, or 
+        the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">extended reference</a>. You can also just type an unknown 
+        property you come across in the MDN search bar.
+      </p>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script>
@@ -274,6 +330,19 @@
         placement: 'auto',
         theme: 'light-border',
         allowHTML: true,
+      });
+
+      tippy('#paywalls', {
+        content:
+          "Deleting a paywall is not always easy on sophisticated sites like the NYT. They try their best to misdirect you. It's like a game of cat and mouse. But it works well on lots of other sites.",
+        placement: 'auto',
+        theme: 'light-border',
+      });
+
+      tippy('#StylesTab', {
+        content: "Some times an element has a style property defined in more than one place. The 'Cascading' part of CSS refers to the order in which properties are applied to particular elements. The Styles tab lists the applied properties from most to least specific. You can tell that a property was overriden elsewhere when it\'s crossed out.",
+        placement: 'auto',
+        theme: 'light-border',
       });
     </script>
   </body>

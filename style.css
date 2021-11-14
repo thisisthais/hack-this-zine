@@ -75,6 +75,12 @@ li {
   list-style-type: circle;
 }
 
+input[type='text'] {
+  min-height: 3ch;
+  width: 50%;
+  margin: 0 auto;
+}
+
 span.definable {
   text-decoration: underline wavy #e81c4f;
   font-weight: bold;
