@@ -17,10 +17,6 @@ h5 {
   text-align: center;
 }
 
-h1 {
-  width: 100vw;
-}
-
 strong,
 b {
   color: #333;
@@ -93,18 +89,31 @@ img.definable {
   padding: 2ch;
 }
 
+.todo > summary::marker {
+  font-size: 1.5em;
+}
+
+.todo > summary {
+  list-style-type: '☐';
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.todo[open] > summary {
+  list-style-type: '☑';
+}
+
 .activity {
   border: 10px double #e81c4f;
   padding: 2ch;
 }
 
 .tagsTable {
-  width: 80vw;
+  width: 100%;
   align-self: center;
   table-layout: fixed;
   border: 2px solid #999;
   padding: 20px;
-  margin: 30px;
   border-collapse: collapse;
 }
 

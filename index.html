@@ -49,27 +49,39 @@
         Right-click <strong>☛ RIGHT HERE ☚</strong> and select "Inspect".
         <br />
         <br />
-        You should see something like this:
+      </p>
+    </div>
+    <details class="todo" open>
+      <summary>I was able to open the Web Inspector!</summary>
+      <p style="margin-top: 5%">You should see something more or less like this:</p>
         <img
           src="https://i.ibb.co/q9xpNmQ/Screen-Shot-2021-11-13-at-3-49-13-PM.png"
           alt="screenshot of this page with the web inspector open to the right"
           class="definable"
           id="WIScreenshot1"
         />
-        <img style="width: 40%; float: right; margin-left: 2ch;" src="https://i.ibb.co/wSyMnK1/Screen-Shot-2021-11-13-at-5-11-37-PM.png" />
-        To keep the page you're inspecting at full-width, you can also pull the Web Inspector into its 
-        own window. Look for the three dots menu on the top right, and select the Dock Side option that 
-        looks like two windows.
+        <details open>
+          <summary>How can I use the Web Inspector and keep my page at full width?</summary>
+          <div style="display: flex; flex-direction: row;">
+            <p>
+              To keep the page you're inspecting at full-width, you can also pull the Web Inspector into its 
+              own window. Look for the three dots menu on the top right, and select the Dock Side option that 
+              looks like two windows.
+            </p>
+            <img style="width: 40%; margin-left: 2ch; object-fit: contain;" src="https://i.ibb.co/wSyMnK1/Screen-Shot-2021-11-13-at-5-11-37-PM.png" />
+          </div>
+        </details>
+        <h2>How do you feel looking at the Web Inspector? Particularly if you feel overwhelmed, it may be useful to gather your thoughts here.</h2>
+        <textarea></textarea>
         <br />
         <br />
         Spend a few minutes scrolling through HTML code in the <strong>Elements</strong> tab.
-        What do you see? Do you see the text that's on this workbook?
-        <h2>In what way does this wookbook's content look different when viewed through the Web Inspector?</h2>
+        What do you see? Do you see any of the text that's on this workbook?
+        <h2>Write about some of the things you see through the Web Inspector.</h2>
         <textarea></textarea>
         What happens if you double-click the content in the Web Inspector? You should be able to edit or fully replace that piece of content!
         <br />
         <br />
-      </p>
       <div class="activity">
         <h3 style="padding: 0;">Activity #1: Editing Content</h3>
         <p>
@@ -87,238 +99,277 @@
             <li>^^^^^^^</li>
           </ul>
           <br />
-          <p>You can change content on almost any website. Go out and explore and maybe send a friend a funny screenshot!</p>
+          <p>You can change content on almost any website, no Photoshop required! For example, a tweet:</p>
           <img src="https://i.ibb.co/rwBjW3p/Screen-Shot-2021-11-14-at-10-22-32-AM.png" />
+          <p>Or a new's headline:</p>
           <img src="https://i.ibb.co/R66n4x4/Screen-Shot-2021-11-14-at-10-37-08-AM.png" />
+          <p>Get creative! Explore the wild web and make it your own.</p>
           <img src="https://i.ibb.co/xjk0RGX/Screen-Shot-2021-11-14-at-10-49-16-AM.png" />
         </p>
       </div>
-      </div>
-      <h1>Exploring Structure: HTML</h1>
-      <p>
-        HTML stands for <strong>Hypertext Markup Language</strong>. Historically, markup languages were used 
-        to annotate text content (for example, a manuscript) to let the typesetter know how different parts of 
-        the text should look once it's printed. For example, the markup language can note what 
-        text should be bolded, italicized, be in a different font, be a section header, and so on.
-        <img src="https://i.ibb.co/NWsTJsX/manuscript.png" />
-      </p>
-      <p>
-        Back in the Web Inspector, find the elements that look something like:
-          <ul style="margin-bottom: 0">
-            <li><span class="purple">&lt;h1></span></li>
-            <li><span class="purple">&lt;p></span></li>
-            <li><span class="purple">&lt;strong></span></li>
-          </ul>
-      </p>
-      <p>
-        These are called <strong>tags</strong>!
-        Just like a manuscript markup has symbols that communicate to the typesetter the purpose of a 
-        piece of content and how it should look once printed, <strong>HTML tags are symbols that tell your web browser the purpose of a 
-        piece of content.</strong>
-        <br />
-        <br />
-        When you hover over HTML tags, the corresponding section in this workbook should become highlighted.
-        <img src="https://i.ibb.co/h7vGw1J/Screen-Shot-2021-11-13-at-5-05-24-PM.png" />
-        HTML tags are often nested inside of each other. You can expand a tag by clicking the arrow to its left.
-        <br />
-        <br />
-        Now, imagine that you are designing your own markup language.
-      </p>
-      <h2 style="margin-top: 0; padding-top: 0;">What tag would you want to include? What would your tag communicate to the typesetter about the content inside it?</h2>
-      <textarea></textarea>
-      <p>
-        There are way too many types of HTML tags to cover here, but you can find out about all of them within 
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Mozilla's Developer Documentation</a>. 
-        Mozilla's Web Docs are a great reference source not just for HTML, but for many other web technology you may be curious about, like CSS and JavaScript.
-        <!-- something about next steps here? -->
-      </p>
-      <p>
-        Let's take a look at a few common HTML tags. You can see the HTML code for each tag in the first column. You can also
-        find the relevant bits of code in the Web Inspector.
-        <table class="tagsTable">
-          <thead>
-            <tr>
-              <th>HTML</th>
-              <th>Tag Name</th>
-              <th colspan="1">Rendering</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>
-                <code>
-                  <span class="purple">&lt;p&gt;&lt;/p&gt;</span>
-                </code>
-              </th>
-              <th>paragraph</th>
-              <th>This is a paragraph! It's a short one, but still.</th>
-            </tr>
-            <tr>
-              <th>
-                <code>
-                  <span class="purple">&lt;h1&gt;&lt;/h1&gt</span>
-                  <br/>
-                  <span class="purple">&lt;h2&gt;&lt;/h2&gt</span>
-                  <br/>
-                  <span class="purple">&lt;h3&gt;&lt;/h3&gt</span>
-                  <br/>
-                  <span class="purple">...</span>
-                </code>
-              </th>
-              <th>header</th>
-              <th>
-                <h1 class="reset">I'm a h1!</h1>
-                <h2 class="reset">I'm a h2!</h2>
-                <h3 class="reset">I'm a h3!</h3>
-              </th>
-            </tr>
-            <tr>
-              <th>
-                <code>
-                  <span class="purple">&lt;div&gt;&lt;/div&gt</span>
-                </code>
-              </th>
-              <th>
-                content division
-              </th>
-              <th>
-                <div style="background-color: cornsilk; padding: 10px; margin: 10px; border: 5px dotted olivedrab">I'm <em>inside</em> a div. The div doesn't have any visual attributes unless styled to have some. For example, this one has a border and a background.</div>
-              </th>
-            </tr>
-            <tr>
-              <th>
-                <code>
-                  <span class="purple">&lt;strong&gt;&lt;/strong&gt</span>
-                </code>
-              </th>
-              <th>
-                strong
-              </th>
-              <th>I'm very <strong>important</strong></th>
-            </tr>
-            <tr>
-              <th>
-                <code>
-                  <span class="purple">&lt;em&gt;&lt;/em&gt</span>
-                </code>
-              </th>
-              <th>
-                emphasis
-              </th>
-              <th>I'm also <em>important</em>, but more emphatically</th>
-            </tr>
-            <tr>
-              <th>
-                <code>
-                  <span class="purple">&lt;img src="image_url"&gt;</span>
-                </code>
-              </th>
-              <th>
-                image
-              </th>
-              <th><img src="https://pbs.twimg.com/profile_banners/1864075333/1598733485/1500x500" style="width: 90%"></th>
-            </tr>
-            <tr>
-              <th>
-                <code>
-                  <span class="purple">
-                    <span style="margin-left: -40px">&lt;ul&gt;</span>
+      <details class="todo" open>
+        <summary>I was able to change some content on a web page!</summary>
+        <h1>Exploring Structure: HTML</h1>
+        <p>
+          HTML stands for <strong>Hypertext Markup Language</strong>. Historically, markup languages were used 
+          to annotate text content (for example, a manuscript) to let the typesetter know how different parts of 
+          the text should look once it's printed. For example, the markup language can note what 
+          text should be bolded, italicized, be in a different font, be a section header, and so on.
+          <img src="https://i.ibb.co/NWsTJsX/manuscript.png" />
+        </p>
+        <p>
+          Back in the Web Inspector, find the elements that look something like:
+            <ul style="margin-bottom: 0">
+              <li><span class="purple">&lt;h1></span></li>
+              <li><span class="purple">&lt;p></span></li>
+              <li><span class="purple">&lt;strong></span></li>
+            </ul>
+        </p>
+        <p>
+          These are called <strong>tags</strong>!
+          Just like a manuscript markup has symbols that communicate to the typesetter the purpose of a 
+          piece of content and how it should look once printed, <strong>HTML tags are symbols that tell your web browser the purpose of a 
+          piece of content.</strong>
+          <br />
+          <br />
+          When you hover over HTML tags, the corresponding section in this workbook should become highlighted.
+          <img src="https://i.ibb.co/h7vGw1J/Screen-Shot-2021-11-13-at-5-05-24-PM.png" />
+          HTML tags are often nested inside of each other. You can expand a tag by clicking the arrow to its left.
+          <br />
+          <br />
+        </p>
+        <h2 style="margin-top: 0; padding-top: 0;">How would you describe the relationship between an HTML tag and the content inside it in your own words?</h2>
+        <textarea></textarea>
+        <p>
+          There are way too many types of HTML tags to cover here, but you can find out about all of them within 
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Mozilla's Developer Documentation</a>. 
+          Mozilla's Web Docs are a great reference source not just for HTML, but for many other web technology you may be curious about, like CSS and JavaScript.
+          <!-- something about next steps here? -->
+        </p>
+        <p>
+          Let's take a look at a few common HTML tags. You can see the HTML code for each tag in the first column. You can also
+          find the relevant bits of code in the Web Inspector.
+          <table class="tagsTable">
+            <thead>
+              <tr>
+                <th>HTML</th>
+                <th>Tag Name</th>
+                <th colspan="1">Rendering</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  <code>
+                    <span class="purple">&lt;p&gt;&lt;/p&gt;</span>
+                  </code>
+                </th>
+                <th>paragraph</th>
+                <th>This is a paragraph! It's a short one, but still.</th>
+              </tr>
+              <tr>
+                <th>
+                  <code>
+                    <span class="purple">&lt;h1&gt;&lt;/h1&gt</span>
                     <br/>
-                    <span style="margin-left: 20px">&lt;li&gt;&lt;/li&gt</span>
+                    <span class="purple">&lt;h2&gt;&lt;/h2&gt</span>
                     <br/>
-                    <span style="margin-left: 20px">&lt;li&gt;&lt;/li&gt</span>
+                    <span class="purple">&lt;h3&gt;&lt;/h3&gt</span>
                     <br/>
-                    <span style="margin-left: -40px">&lt;/ul&gt;</span>
-                  </span>
-                </code>
-              </th>
-              <th>
-                unordered list and list items
-              </th>
-              <th>
-                <ul style="text-align: left">
-                  <li>We're in a list!</li>
-                  <li>We're the list elements</li>
-                </ul>
-              </th>
-            </tr>
-            <tr>
-              <th>
-                <code>
-                  <span class="purple">&lt;a href="any_url"&gt;</span>
-                </code>
-              </th>
-              <th>
-                anchor
-              </th>
-              <th><a href="https://twitter.com/tfivefifty" target="_blank">I'm an anchor! I link to anything with a URL</a></th>
-            </tr>
-          </tbody>
-        </table>  
-      </p>
-      <div class="activity">
-        <h3 style="padding: 0;">Activity #2: Editing Tags</h3>
-        <!-- activity where changing emphasis changes sentence meanig OR poem line breaks -->
-        <p>Let's spend some time tinkering with tags through the Web Inspector! Try these to start:</p>
-        <h6>i'm so small... i wish i was big and important</h6>
-        <strong>I WISH I WAS JUST A NORMAL PARAGRAPH</strong>
-        <br />
-        <img src="my image URL is broken... can you replace it with one that works?" />
-        <br />
-        <br />
-        <p>You can  edit properties of HTML tags. For example, if a form submission button is disabled because you missed the deadline to upload your school ID photo, you can just delete that attribute and submit your photo anyway!</p>
-        <img src="https://i.ibb.co/hXgQdcp/Screen-Shot-2021-11-14-at-11-13-16-AM.png" />
-        <p>It's also possible to use the Web Inspector to fully delete tags.</p>
-        <img src="https://i.ibb.co/PCb18sc/Screen-Shot-2021-11-14-at-10-58-30-AM.png" />
-        <p>Deleting HTML can come in handy in many situations, like getting past <span class="definable" id="paywalls">paywalls.</span></p>
-        <img src="https://i.ibb.co/VMVDDtm/Screen-Shot-2021-11-14-at-11-04-02-AM.png" />
-        What can you try to change out there in the wild wild web?
-      </div>
-      <h2>What website did try editing?</h2>
-      <input type="text">
-      <h2>What did you change?</h2>
-      <textarea></textarea>
-      <h2>Add a screenshot of your edit here:</h2>
-      <img src="add image URL here" />
-      <h1>Exploring Styling: CSS</h1>
-      <p>
-        Think about the websites you visit often. How similar do they look? How can the same HTML tags <em>look</em> so diferent on different sites?
-        <h2 style="margin: 0">How can this be an <span class="purple">&lt;h2&gt;</span></h2>
-        <h2 style="font-family:'Courier New'; color:cadetblue; font-size: 0.7em;">And this is also an <span class="purple">&lt;h2&gt;</span></h2>
-        But they look totally different? Let's <span style="margin: 2ch auto 0 auto">ﾟ･✧･ﾟINSPECTﾟ･✧･ﾟ</span>
-        <img src="https://i.ibb.co/BVFCLR1/Screen-Shot-2021-11-14-at-11-47-33-AM.png" />
-      </p>
-      <p>
-        The key is in the "style" attribute on the <span class="purple">&lt;h2&gt;</span> tag. In the style attribute, you can write CSS.
-        <strong>CSS stands for Cascading Style Sheets and it's the language that we can use to better define how elements on a webpage should look.</strong>
-        <br />
-        <br />
-        It's easier to see an element's styling if you look at the <span class="definable" id="StylesTab">Styles tab</span> near the bottom.
-      </p>
-      <!-- something about checking and unchecking boxes -->
-      <!-- extended resources especially about how the cascade works -->
-      <!-- include section on how to save your work -->
-      <!-- have a place for people to add name and date and etc -->
-      <img style="width: 50%" src="https://i.ibb.co/WPx9cjr/Screen-Shot-2021-11-14-at-11-47-51-AM.png" />
-      <p>You can do a lot of styling right in the Styles tab for an element. You can edit one of its' property, delete one, or add a whole new property.</p>
-      <div class="activity">
-        <h3 style="padding: 0;">Activity #3: Editing CSS</h3>
-        <p style="color: #333">Here's a list of <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">named colors in CSS</a>. Change this line to any color you like!</p>
-        <br />
-        <p style="background-color: darkseagreen;">You can also add or change a background color to elements. What's your favorite color?</p>
-        <br />
-        <p style="background-color: sandybrown; border-style: dashed; border-color: seagreen; border-width: 10px;">You can create a lot of visual interest with just a border and a background. Refer to the Mozilla documentation to learn about all the possibilities for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">borders</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" target="_blank">backgrounds</a> and get creative here!</p>
-        <br />
-        <p style="border: 5px outset pink; outline: 5px solid khaki; box-shadow: 0 0 0 20px skyblue; border-radius: 5px; padding: 10px; margin: 10px; outline-offset: 10px">I have a border, an outline, and a box shadow. Cool right?? Check out my styles in the inspector! What looks fun to change?</p>
-        <br />
-        <p style="cursor: grab">You can style so many things with CSS, including the cursor. Hover over me to see!</p>
-      </div>
-      <p>
-        Even people who have been coding for the web for years don't know all the possible CSS properties. When in doubt, you can always refer to this 
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference" target="_blank">list of most common CSS properties</a>, or 
-        the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">extended reference</a>. You can also just type an unknown 
-        property you come across in the MDN search bar.
-      </p>
+                    <span class="purple">...</span>
+                  </code>
+                </th>
+                <th>header</th>
+                <th>
+                  <h1 class="reset">I'm a h1!</h1>
+                  <h2 class="reset">I'm a h2!</h2>
+                  <h3 class="reset">I'm a h3!</h3>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <code>
+                    <span class="purple">&lt;div&gt;&lt;/div&gt</span>
+                  </code>
+                </th>
+                <th>
+                  content division
+                </th>
+                <th>
+                  <div style="background-color: cornsilk; padding: 10px; margin: 10px; border: 5px dotted olivedrab">I'm <em>inside</em> a div. The div doesn't have any visual attributes unless styled to have some. For example, this one has a border and a background.</div>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <code>
+                    <span class="purple">&lt;strong&gt;&lt;/strong&gt</span>
+                  </code>
+                </th>
+                <th>
+                  strong
+                </th>
+                <th>I'm very <strong>important</strong></th>
+              </tr>
+              <tr>
+                <th>
+                  <code>
+                    <span class="purple">&lt;em&gt;&lt;/em&gt</span>
+                  </code>
+                </th>
+                <th>
+                  emphasis
+                </th>
+                <th>I'm also <em>important</em>, but more emphatically</th>
+              </tr>
+              <tr>
+                <th>
+                  <code>
+                    <span class="purple">&lt;img src="image_url"&gt;</span>
+                  </code>
+                </th>
+                <th>
+                  image
+                </th>
+                <th><img src="https://pbs.twimg.com/profile_banners/1864075333/1598733485/1500x500" style="width: 90%"></th>
+              </tr>
+              <tr>
+                <th>
+                  <code>
+                    <span class="purple">
+                      <span style="margin-left: -40px">&lt;ul&gt;</span>
+                      <br/>
+                      <span style="margin-left: 20px">&lt;li&gt;&lt;/li&gt</span>
+                      <br/>
+                      <span style="margin-left: 20px">&lt;li&gt;&lt;/li&gt</span>
+                      <br/>
+                      <span style="margin-left: -40px">&lt;/ul&gt;</span>
+                    </span>
+                  </code>
+                </th>
+                <th>
+                  unordered list and list items
+                </th>
+                <th>
+                  <ul style="text-align: left">
+                    <li>We're in a list!</li>
+                    <li>We're the list elements</li>
+                  </ul>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <code>
+                    <span class="purple">&lt;a href="any_url"&gt;</span>
+                  </code>
+                </th>
+                <th>
+                  anchor
+                </th>
+                <th><a href="https://twitter.com/tfivefifty" target="_blank">I'm an anchor! I link to anything with a URL</a></th>
+              </tr>
+            </tbody>
+          </table>  
+        </p>
+        <div class="activity">
+          <h3 style="padding: 0;">Activity #2: Editing Tags</h3>
+          <!-- activity where changing emphasis changes sentence meanig OR poem line breaks -->
+          <p>Let's spend some time tinkering with tags through the Web Inspector! Try these to start:</p>
+          <h6>i'm so small... i wish i was big and important</h6>
+          <strong>I WISH I WAS JUST A NORMAL PARAGRAPH</strong>
+          <br />
+          <p>My image is broken! Can you fix it?</p>
+          <img src="my image URL is broken... can you replace it with one that works?" />
+          <br />
+          <br />
+          <p>
+            HTML tags can have attributes. For example, <span class="purple">src</span> is an attribute of the <span class="purple">&lt;img></span> tag.
+            Attributes can be added or deleted through the WebInspector. Try removing the disabled attribute from the button below.
+          </p>
+          <button disabled>I want to be clickable!</button>
+          <p>It's also possible to use the Web Inspector to fully delete tags.</p>
+          <img src="https://i.ibb.co/PCb18sc/Screen-Shot-2021-11-14-at-10-58-30-AM.png" />
+          <p>Deleting HTML can come in handy in many situations, like getting past <span class="definable" id="paywalls">paywalls.</span></p>
+          <img src="https://i.ibb.co/VMVDDtm/Screen-Shot-2021-11-14-at-11-04-02-AM.png" />
+          <p>You can practice deleting elements by fixing the sentence below. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank">Read about the <span class="purple">&lt;br></span> tag.</a></p>
+          <p>
+            pu
+            <br />
+            t me
+            <br/>
+            back
+            <br/>
+            tog
+            <br />
+            et
+            <br/>
+            her pl
+            <br/>ease
+          </p>
+          What can you try to change out there in the wild wild web?
+        </div>
+        <details class="todo" open>
+          <summary>I was able to edit some HTML tags!</summary>
+          <h2>What website(s) did try editing?</h2>
+          <input type="text" style="width: 100%">
+          <h2>What did you change?</h2>
+          <textarea></textarea>
+          <h2>Add a screenshot of your edit here:</h2>
+          <img src="add image URL here" />
+          <details>
+            <summary>How can I get a link for my screenshot?</summary>
+            <p>
+              First you have to upload your screenshoot to a hosting service. <a href="https://imgbb.com/" target="_blank">ImgBB</a> is a free option.
+              Then, you need to get the image URL. You can right click the image and look for something like "Copy Image Address". You can also drag 
+              the image to your browser's URL bar and copy what shows up there.
+              <br />
+              <br />
+              Paste your url into the <span class="purple">src</span> attribute of the <span class="purple">&lt;img /></span> tag.
+            </p>
+          </details>
+          <h1>Exploring Styling: CSS</h1>
+          <p>
+            Think about the websites you visit often. How similar do they look? How can the same HTML tags <em>look</em> so diferent on different sites?
+            <h2 style="margin: 0">How can this be an <span class="purple">&lt;h2&gt;</span></h2>
+            <h2 style="font-family:'Courier New'; color:cadetblue; font-size: 0.7em;">And this is also an <span class="purple">&lt;h2&gt;</span></h2>
+            But they look totally different? Let's <span style="margin: 2ch auto 0 auto">ﾟ･✧･ﾟINSPECTﾟ･✧･ﾟ</span>
+            <img src="https://i.ibb.co/BVFCLR1/Screen-Shot-2021-11-14-at-11-47-33-AM.png" />
+          </p>
+          <p>
+            The key is in the "style" attribute on the <span class="purple">&lt;h2&gt;</span> tag. In the style attribute, you can write CSS.
+            <strong>CSS stands for Cascading Style Sheets and it's the language that we can use to better define how elements on a webpage should look.</strong>
+            <br />
+            <br />
+            <div style="display: flex;">
+              <p>It's easier to see an element's styling if you look at the <span class="definable" id="StylesTab">Styles tab</span> near the bottom.</p>
+              <img style="width: 50%; margin-left: 2ch" src="https://i.ibb.co/WPx9cjr/Screen-Shot-2021-11-14-at-11-47-51-AM.png" />
+            </div>
+          </p>
+          <!-- something about checking and unchecking boxes -->
+          <!-- extended resources especially about how the cascade works -->
+          <!-- include section on how to save your work -->
+          <!-- have a place for people to add name and date and etc -->
+          <p>You can do a lot of styling right in the Styles tab for an element. You can edit one of its' property, delete one, or add a whole new property.</p>
+          <div class="activity">
+            <h3 style="padding: 0;">Activity #3: Editing CSS</h3>
+            <p style="color: #333">Here's a list of <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">named colors in CSS</a>. Change this line to any color you like!</p>
+            <br />
+            <p style="background-color: darkseagreen;">You can also add or change a background color to elements. What's your favorite color?</p>
+            <br />
+            <p style="background-color: sandybrown; border-style: dashed; border-color: seagreen; border-width: 10px;">You can create a lot of visual interest with just a border and a background. Refer to the Mozilla documentation to learn about all the possibilities for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">borders</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" target="_blank">backgrounds</a> and get creative here!</p>
+            <br />
+            <p style="border: 5px outset pink; outline: 5px solid khaki; box-shadow: 0 0 0 20px skyblue; border-radius: 5px; padding: 10px; margin: 10px; outline-offset: 10px">I have a border, an outline, and a box shadow. Cool right?? Check out my styles in the inspector! What looks fun to change?</p>
+            <br />
+            <p style="cursor: grab">You can style so many things with CSS, including the cursor. Hover over me to see!</p>
+          </div>
+          <p>
+            Even people who have been coding for the web for years don't know all the possible CSS properties. When in doubt, you can always refer to this 
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference" target="_blank">list of most common CSS properties</a>, or 
+            the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">extended reference</a>. You can also just type an unknown 
+            property you come across in the MDN search bar.
+          </p>
+        </details>
+      </details>
+    </details>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script>
@@ -331,7 +382,7 @@
       tippy('#WIScreenshot1', {
         content:
           "<p>This looks like A LOT of information right now, but don't worry. We will soon learn to navigate this tool well.<br/><br/> For now, just be sure you're in the <strong>Elements</strong> tab.</p>",
-        placement: 'auto',
+        placement: 'bottom',
         theme: 'light-border',
         allowHTML: true,
       });
