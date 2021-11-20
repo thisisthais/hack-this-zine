@@ -58,7 +58,7 @@ body {
   width: 60px;
   background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
   background-size: 30px 30px;
-  border-right: 3px solid #d44147;
+  border-right: 3px solid #4d9f0c;
   box-sizing: border-box;
 }
 
@@ -68,7 +68,7 @@ body {
   right: 0;
   bottom: 30px;
   left: 60px;
-  background: linear-gradient(transparent, transparent 28px, #91d1d3 28px);
+  background: linear-gradient(transparent, transparent 28px, #9198e5 28px);
   background-size: 30px 30px;
 }
 
@@ -82,12 +82,20 @@ body {
   border: 0;
   outline: 0;
   background: transparent;
-  color: mediumblue;
+  color: darkslateblue;
   font-family: 'Architects Daughter', 'Handlee', cursive;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.2em;
   box-sizing: border-box;
-  z-index: 1;
+}
+
+.suggestion {
+  list-style-image: url(/images/seedling.png);
+  margin-left: 5ch;
+}
+
+.suggestion > li {
+  margin-bottom: 2ch;
 }
 
 code {
@@ -102,7 +110,7 @@ code {
 }
 
 a {
-  color: #e81c4f;
+  color: #4d9f0c;
 }
 
 strong,
@@ -125,14 +133,14 @@ input[type='text'] {
 }
 
 span.definable {
-  text-decoration: underline wavy #e81c4f;
+  text-decoration: underline wavy #4d9f0c;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   color: #333;
 }
 
 img.definable {
-  border: 3px dashed #e81c4f;
+  border: 10px dashed #9198e5;
   padding: 2ch;
 }
 
@@ -151,7 +159,9 @@ img.definable {
 }
 
 .activity {
-  border: 10px double #e81c4f;
+  border: 30px double #4d9f0c;
+  border-image: repeating-linear-gradient(40deg, #4d9f0c, #9198e5, #4d9f0c 50px)
+    200;
   padding: 2ch;
 }
 
@@ -159,9 +169,11 @@ img.definable {
   width: 100%;
   align-self: center;
   table-layout: fixed;
-  border: 2px solid #999;
+  border: 10px dotted #9198e5;
+  /* border-image: repeating-linear-gradient(40deg, #4d9f0c, #9198e5, #4d9f0c 50px)
+    200; */
   padding: 20px;
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
 }
 
 thead {
