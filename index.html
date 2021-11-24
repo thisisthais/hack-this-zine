@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wild World of Websites</title>
-    <style></style>
+    <style>
+      TODO: move styling in here
+    </style>
+    <script>
+      function addTextareaContent(e) {
+        e.textContent = e.value;
+      }
+    </script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/@highlightjs/cdn-assets@11.3.1/styles/default.min.css"
@@ -31,19 +38,19 @@
     <h2>How would you describe websites to someone who's never heard of them?</h2>
     <div class="paper">
       <div class="paper-content">
-        <textarea></textarea>
+        <textarea onchange="addTextareaContent(this)"></textarea>
       </div>
     </div>
     <h2>What if they asked you how websites are made, what would you say?</h2>
     <div class="paper">
       <div class="paper-content">
-        <textarea></textarea>
+        <textarea onchange="addTextareaContent(this)"></textarea>
       </div>
     </div>
     <h2>What if they asked you if <em>you</em> could make a website, what would you say?</h2>
     <div class="paper">
       <div class="paper-content">
-        <textarea></textarea>
+        <textarea onchange="addTextareaContent(this)"></textarea>
       </div>
     </div>
     <h1>Tool of the Trade</h1>
@@ -91,7 +98,7 @@
         <h2>How do you feel looking at the Web Inspector? Particularly if you feel overwhelmed, it may be useful to gather your thoughts here.</h2>
         <div class="paper">
           <div class="paper-content">
-            <textarea></textarea>
+            <textarea onchange="addTextareaContent(this)"></textarea>
           </div>
         </div>
         <br />
@@ -101,7 +108,7 @@
         <h2>Write about some of the things you see through the Web Inspector.</h2>
         <div class="paper">
           <div class="paper-content">
-            <textarea></textarea>
+            <textarea onchange="addTextareaContent(this)"></textarea>
           </div>
         </div>
         <p>What happens if you double-click the content in the Web Inspector? You should be able to edit or fully replace that piece of content!</p>
@@ -166,7 +173,7 @@
         <h2 style="margin-top: 0; padding-top: 0;">How would you describe the relationship between an HTML tag and the content inside it in your own words?</h2>
         <div class="paper">
           <div class="paper-content">
-            <textarea></textarea>
+            <textarea onchange="addTextareaContent(this)"></textarea>
           </div>
         </div>
         <p>
@@ -341,13 +348,13 @@
           <h2>What website(s) did try editing?</h2>
           <div class="paper" style="min-height: 150px;">
             <div class="paper-content">
-              <textarea></textarea>
+              <textarea onchange="addTextareaContent(this)"></textarea>
             </div>
           </div>
           <h2>What did you change?</h2>
           <div class="paper">
             <div class="paper-content">
-              <textarea></textarea>
+              <textarea onchange="addTextareaContent(this)"></textarea>
             </div>
           </div>
           <h2>Add a screenshot of your edit here:</h2>
@@ -413,19 +420,19 @@
               reached into the inner workings and made this page your own!
               <br />
               <br />
-              TODO: download link your version of the workbook
+              You can download this page with all your wonderful additions by clicking     <a onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)" href="#" download="page.html">here!</a>
             </p>
             <p style="text-align: center; margin-bottom: 1ch; margin-top: 5ch;">Here's a callback to where we started. <br /> Taking what you've learned,</p>
             <h2 style="margin-top: 0; padding-top: 0;">How would you describe to someone how websites are made?</h2>
             <div class="paper">
               <div class="paper-content">
-                <textarea></textarea>
+                <textarea onchange="addTextareaContent(this)"></textarea>
               </div>
             </div>
             <h2>How do you feel about your ability to make a website now?</h2>
             <div class="paper">
               <div class="paper-content">
-                <textarea></textarea>
+                <textarea onchange="addTextareaContent(this)"></textarea>
               </div>
             </div>
             <p style="margin-top: 6ch">
