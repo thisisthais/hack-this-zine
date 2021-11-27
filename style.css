@@ -69,6 +69,7 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
+
 .paper:before {
   content: '';
   position: absolute;
@@ -80,6 +81,25 @@ body {
   background-size: 30px 30px;
   border-right: 3px solid #4d9f0c;
   box-sizing: border-box;
+}
+
+.name {
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  top: 20%;
+  height: 50%;
+  max-height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: darkslateblue;
+  font-family: 'Architects Daughter', 'Handlee', cursive;
+  font-weight: bold;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  border-bottom: #9198e5 solid 2px;
+  resize: none;
 }
 
 .paper-content {
@@ -107,6 +127,7 @@ body {
   font-weight: bold;
   font-size: 1.2em;
   box-sizing: border-box;
+  resize: none;
 }
 
 .suggestion {

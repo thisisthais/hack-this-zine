@@ -1,48 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wild World of Websites</title>
-    <style>
+    <style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><style>
       TODO: move styling in here
     </style>
     <script>
       function addTextareaContent(e) {
+        console.log(e.value);
         e.textContent = e.value;
+        console.log(e.textContent);
       }
     </script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@highlightjs/cdn-assets@11.3.1/styles/default.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/tippy.js@6/animations/scale.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/tippy.js@6/animations/scale.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/tippy.js@6/themes/light-border.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.3.1/styles/default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light-border.css">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <h1 style="margin-bottom: 0">The Wild Word of Websites</h1>
-    <h2 style="margin-top: 0">An HTML & CSS Workbook</h2>
+    <h2 style="margin-top: 0">An HTML &amp; CSS Workbook</h2>
     <h3>This workbook belongs to:</h3>
     <div class="paper" style="min-height: 90px">
-        <textarea class="name" onchange="addTextareaContent(this)"></textarea>
+        <input class="name" type="text" onchange="addTextareaContent(this)">
     </div>
     <p>Intro TBD...</p>
     <h2>How would you describe websites to someone who's never heard of them?</h2>
     <div class="paper">
       <div class="paper-content">
-        <textarea onchange="addTextareaContent(this)"></textarea>
+        <textarea onchange="addTextareaContent(this)">dsvxcv dc cx cx d</textarea>
       </div>
     </div>
     <h2>What if they asked you how websites are made, what would you say?</h2>
@@ -59,35 +47,26 @@
     </div>
     <h1>Tool of the Trade</h1>
     <div>
-      <img
-        src="./images/binoculars.png"
-        style="width: 50%; float: left; margin: 0 2ch 0 0"
-        id="myImage"
-      />
+      <img src="./images/binoculars.png" style="width: 50%; float: left; margin: 0 2ch 0 0" id="myImage">
       <p style="margin-top: 0">
         To get a good look at a website, we need to go beyond what we see with
         just our eyes. We need to take a closer look at what lies underneath;
         the code.
-        <br />
-        <br />
+        <br>
+        <br>
         Our main tool is going to be the
         <span class="definable" id="webInspector">Web Inspector</span>.
-        <br />
-        <br />
+        <br>
+        <br>
         Right-click <strong>☛ RIGHT HERE ☚</strong> and select "Inspect".
-        <br />
-        <br />
+        <br>
+        <br>
       </p>
     </div>
-    <details class="todo">
+    <details class="todo" open="">
       <summary>I was able to open the Web Inspector!</summary>
       <p style="margin-top: 5%">You should see something more or less like this:</p>
-        <img
-          src="https://i.ibb.co/q9xpNmQ/Screen-Shot-2021-11-13-at-3-49-13-PM.png"
-          alt="screenshot of this page with the web inspector open to the right"
-          class="definable"
-          id="WIScreenshot1"
-        />
+        <img src="https://i.ibb.co/q9xpNmQ/Screen-Shot-2021-11-13-at-3-49-13-PM.png" alt="screenshot of this page with the web inspector open to the right" class="definable" id="WIScreenshot1">
         <details>
           <summary>How can I use the Web Inspector and keep my page at full width?</summary>
           <div style="display: flex; flex-direction: row;">
@@ -96,7 +75,7 @@
               own window. Look for the three dots menu on the top right, and select the Dock Side option that 
               looks like two windows.
             </p>
-            <img style="width: 40%; margin-left: 2ch; object-fit: contain;" src="https://i.ibb.co/wSyMnK1/Screen-Shot-2021-11-13-at-5-11-37-PM.png" />
+            <img style="width: 40%; margin-left: 2ch; object-fit: contain;" src="https://i.ibb.co/wSyMnK1/Screen-Shot-2021-11-13-at-5-11-37-PM.png">
           </div>
         </details>
         <h2>How do you feel looking at the Web Inspector? Particularly if you feel overwhelmed, it may be useful to gather your thoughts here.</h2>
@@ -105,8 +84,8 @@
             <textarea onchange="addTextareaContent(this)"></textarea>
           </div>
         </div>
-        <br />
-        <br />
+        <br>
+        <br>
         Spend a few minutes scrolling through HTML code in the <strong>Elements</strong> tab.
         What do you see? Do you see any of the text that's on this workbook?
         <h2>Write about some of the things you see through the Web Inspector.</h2>
@@ -116,8 +95,8 @@
           </div>
         </div>
         <p>What happens if you double-click the content in the Web Inspector? You should be able to edit or fully replace that piece of content!</p>
-        <br />
-        <br />
+        <br>
+        <br>
       <div class="activity">
         <h3 style="padding: 0;">Activity #1: Editing Content</h3>
         <p>
@@ -127,23 +106,23 @@
           Don't worry, the changes aren't permanent and if you ever want to go to the original version of this page you just need to refresh.
           <br />
           <br /> -->
-          <p>Try editing this right here:</p>
+          </p><p>Try editing this right here:</p>
           <ul>
             <strong>My Perfect Three-Course Meal</strong>
             <li>???????</li>
             <li>:::::::</li>
             <li>^^^^^^^</li>
           </ul>
-          <br />
+          <br>
           <p>You can change content on almost any website, no Photoshop required! For example, a tweet:</p>
-          <img src="https://i.ibb.co/rwBjW3p/Screen-Shot-2021-11-14-at-10-22-32-AM.png" />
+          <img src="https://i.ibb.co/rwBjW3p/Screen-Shot-2021-11-14-at-10-22-32-AM.png">
           <p>Or a new's headline:</p>
-          <img src="https://i.ibb.co/R66n4x4/Screen-Shot-2021-11-14-at-10-37-08-AM.png" />
+          <img src="https://i.ibb.co/R66n4x4/Screen-Shot-2021-11-14-at-10-37-08-AM.png">
           <p>Get creative! Explore the wild web and make it your own.</p>
-          <img src="https://i.ibb.co/xjk0RGX/Screen-Shot-2021-11-14-at-10-49-16-AM.png" />
-        </p>
+          <img src="https://i.ibb.co/xjk0RGX/Screen-Shot-2021-11-14-at-10-49-16-AM.png">
+        <p></p>
       </div>
-      <details class="todo">
+      <details class="todo" open="">
         <summary>I was able to change some content on a web page!</summary>
         <h1>Exploring Structure: HTML</h1>
         <p>
@@ -151,28 +130,28 @@
           to annotate text content (for example, a manuscript) to let the typesetter know how different parts of 
           the text should look once it's printed. For example, the markup language can note what 
           text should be bolded, italicized, be in a different font, be a section header, and so on.
-          <img src="https://i.ibb.co/NWsTJsX/manuscript.png" />
+          <img src="https://i.ibb.co/NWsTJsX/manuscript.png">
         </p>
         <p>
           Back in the Web Inspector, find the elements that look something like:
-            <ul style="margin-bottom: 0">
-              <li><span class="purple">&lt;h1></span></li>
-              <li><span class="purple">&lt;p></span></li>
-              <li><span class="purple">&lt;strong></span></li>
+            </p><ul style="margin-bottom: 0">
+              <li><span class="purple">&lt;h1&gt;</span></li>
+              <li><span class="purple">&lt;p&gt;</span></li>
+              <li><span class="purple">&lt;strong&gt;</span></li>
             </ul>
-        </p>
+        <p></p>
         <p>
           These are called <strong>tags</strong>!
           Just like a manuscript markup has symbols that communicate to the typesetter the purpose of a 
           piece of content and how it should look once printed, <strong>HTML tags are symbols that tell your web browser the purpose of a 
           piece of content.</strong>
-          <br />
-          <br />
+          <br>
+          <br>
           When you hover over HTML tags, the corresponding section in this workbook should become highlighted.
-          <img src="https://i.ibb.co/h7vGw1J/Screen-Shot-2021-11-13-at-5-05-24-PM.png" />
+          <img src="https://i.ibb.co/h7vGw1J/Screen-Shot-2021-11-13-at-5-05-24-PM.png">
           HTML tags are often nested inside of each other. You can expand a tag by clicking the arrow to its left.
-          <br />
-          <br />
+          <br>
+          <br>
         </p>
         <h2 style="margin-top: 0; padding-top: 0;">How would you describe the relationship between an HTML tag and the content inside it in your own words?</h2>
         <div class="paper">
@@ -189,7 +168,7 @@
         <p>
           Let's take a look at a few common HTML tags. You can see the HTML code for each tag in the first column. You can also
           find the relevant bits of code in the Web Inspector.
-          <table class="tagsTable">
+          </p><table class="tagsTable">
             <thead>
               <tr>
                 <th>HTML</th>
@@ -210,12 +189,12 @@
               <tr>
                 <th>
                   <code>
-                    <span class="purple">&lt;h1&gt;&lt;/h1&gt</span>
-                    <br/>
-                    <span class="purple">&lt;h2&gt;&lt;/h2&gt</span>
-                    <br/>
-                    <span class="purple">&lt;h3&gt;&lt;/h3&gt</span>
-                    <br/>
+                    <span class="purple">&lt;h1&gt;&lt;/h1&gt;</span>
+                    <br>
+                    <span class="purple">&lt;h2&gt;&lt;/h2&gt;</span>
+                    <br>
+                    <span class="purple">&lt;h3&gt;&lt;/h3&gt;</span>
+                    <br>
                     <span class="purple">...</span>
                   </code>
                 </th>
@@ -229,7 +208,7 @@
               <tr>
                 <th>
                   <code>
-                    <span class="purple">&lt;div&gt;&lt;/div&gt</span>
+                    <span class="purple">&lt;div&gt;&lt;/div&gt;</span>
                   </code>
                 </th>
                 <th>
@@ -242,7 +221,7 @@
               <tr>
                 <th>
                   <code>
-                    <span class="purple">&lt;strong&gt;&lt;/strong&gt</span>
+                    <span class="purple">&lt;strong&gt;&lt;/strong&gt;</span>
                   </code>
                 </th>
                 <th>
@@ -253,7 +232,7 @@
               <tr>
                 <th>
                   <code>
-                    <span class="purple">&lt;em&gt;&lt;/em&gt</span>
+                    <span class="purple">&lt;em&gt;&lt;/em&gt;</span>
                   </code>
                 </th>
                 <th>
@@ -277,11 +256,11 @@
                   <code>
                     <span class="purple">
                       <span style="margin-left: -40px">&lt;ul&gt;</span>
-                      <br/>
-                      <span style="margin-left: 20px">&lt;li&gt;&lt;/li&gt</span>
-                      <br/>
-                      <span style="margin-left: 20px">&lt;li&gt;&lt;/li&gt</span>
-                      <br/>
+                      <br>
+                      <span style="margin-left: 20px">&lt;li&gt;&lt;/li&gt;</span>
+                      <br>
+                      <span style="margin-left: 20px">&lt;li&gt;&lt;/li&gt;</span>
+                      <br>
                       <span style="margin-left: -40px">&lt;/ul&gt;</span>
                     </span>
                   </code>
@@ -309,45 +288,45 @@
               </tr>
             </tbody>
           </table>  
-        </p>
+        <p></p>
         <div class="activity">
           <h3 style="padding: 0;">Activity #2: Editing Tags</h3>
           <!-- activity where changing emphasis changes sentence meanig OR poem line breaks -->
           <p>Let's spend some time tinkering with tags through the Web Inspector! Try these to start:</p>
           <h6>i'm so small... i wish i was big and important</h6>
           <strong>I WISH I WAS JUST A NORMAL PARAGRAPH</strong>
-          <br />
+          <br>
           <p>My image is broken! Can you fix it?</p>
-          <img src="my image URL is broken... can you replace it with one that works?" />
-          <br />
-          <br />
+          <img src="my image URL is broken... can you replace it with one that works?">
+          <br>
+          <br>
           <p>
-            HTML tags can have attributes. For example, <span class="purple">src</span> is an attribute of the <span class="purple">&lt;img></span> tag.
+            HTML tags can have attributes. For example, <span class="purple">src</span> is an attribute of the <span class="purple">&lt;img&gt;</span> tag.
             Attributes can be added or deleted through the WebInspector. Try removing the disabled attribute from the button below.
           </p>
-          <button disabled>I want to be clickable!</button>
+          <button disabled="">I want to be clickable!</button>
           <p>It's also possible to use the Web Inspector to fully delete tags.</p>
-          <img src="https://i.ibb.co/PCb18sc/Screen-Shot-2021-11-14-at-10-58-30-AM.png" />
+          <img src="https://i.ibb.co/PCb18sc/Screen-Shot-2021-11-14-at-10-58-30-AM.png">
           <p>Deleting HTML can come in handy in many situations, like getting past <span class="definable" id="paywalls">paywalls.</span></p>
-          <img src="https://i.ibb.co/VMVDDtm/Screen-Shot-2021-11-14-at-11-04-02-AM.png" />
-          <p>You can practice deleting elements by fixing the sentence below. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank">Read about the <span class="purple">&lt;br></span> tag.</a></p>
+          <img src="https://i.ibb.co/VMVDDtm/Screen-Shot-2021-11-14-at-11-04-02-AM.png">
+          <p>You can practice deleting elements by fixing the sentence below. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank">Read about the <span class="purple">&lt;br&gt;</span> tag.</a></p>
           <p>
             pu
-            <br />
+            <br>
             t me
-            <br/>
+            <br>
             back
-            <br/>
+            <br>
             tog
-            <br />
+            <br>
             et
-            <br/>
+            <br>
             her pl
-            <br/>ease
+            <br>ease
           </p>
           What can you try to change out there in the wild wild web?
         </div>
-        <details class="todo">
+        <details class="todo" open="">
           <summary>I was able to edit some HTML tags!</summary>
           <h2>What website(s) did try editing?</h2>
           <div class="paper" style="min-height: 150px;">
@@ -362,36 +341,36 @@
             </div>
           </div>
           <h2>Add a screenshot of your edit here:</h2>
-          <img src="add image URL here" />
+          <img src="add image URL here">
           <details>
             <summary>How can I get a link for my screenshot?</summary>
             <p>
               First you have to upload your screenshoot to a hosting service. <a href="https://imgbb.com/" target="_blank">ImgBB</a> is a free option.
               Then, you need to get the image URL. You can right click the image and look for something like "Copy Image Address". You can also drag 
               the image to your browser's URL bar and copy what shows up there.
-              <br />
-              <br />
-              Paste your url into the <span class="purple">src</span> attribute of the <span class="purple">&lt;img /></span> tag.
+              <br>
+              <br>
+              Paste your url into the <span class="purple">src</span> attribute of the <span class="purple">&lt;img /&gt;</span> tag.
             </p>
           </details>
           <h1>Exploring Styling: CSS</h1>
           <p>
             Think about the websites you visit often. How similar do they look? How can the same HTML tags <em>look</em> so diferent on different sites?
-            <h2 style="margin: 0">How can this be an <span class="purple">&lt;h2&gt;</span></h2>
+            </p><h2 style="margin: 0">How can this be an <span class="purple">&lt;h2&gt;</span></h2>
             <h2 style="font-family:'Courier New'; color:cadetblue; font-size: 0.7em;">And this is also an <span class="purple">&lt;h2&gt;</span></h2>
             But they look totally different? Let's <span style="margin: 2ch auto 0 auto">ﾟ･✧･ﾟINSPECTﾟ･✧･ﾟ</span>
-            <img src="https://i.ibb.co/BVFCLR1/Screen-Shot-2021-11-14-at-11-47-33-AM.png" />
-          </p>
+            <img src="https://i.ibb.co/BVFCLR1/Screen-Shot-2021-11-14-at-11-47-33-AM.png">
+          <p></p>
           <p>
             The key is in the "style" attribute on the <span class="purple">&lt;h2&gt;</span> tag. In the style attribute, you can write CSS.
             <strong>CSS stands for Cascading Style Sheets and it's the language that we can use to better define how elements on a webpage should look.</strong>
-            <br />
-            <br />
-            <div style="display: flex;">
+            <br>
+            <br>
+            </p><div style="display: flex;">
               <p>It's easier to see an element's styling if you look at the <span class="definable" id="StylesTab">Styles tab</span> near the bottom.</p>
-              <img style="width: 50%; margin-left: 2ch" src="https://i.ibb.co/WPx9cjr/Screen-Shot-2021-11-14-at-11-47-51-AM.png" />
+              <img style="width: 50%; margin-left: 2ch" src="https://i.ibb.co/WPx9cjr/Screen-Shot-2021-11-14-at-11-47-51-AM.png">
             </div>
-          </p>
+          <p></p>
           <!-- something about checking and unchecking boxes -->
           <!-- extended resources especially about how the cascade works -->
           <!-- include section on how to save your work -->
@@ -400,13 +379,13 @@
           <div class="activity">
             <h3 style="padding: 0;">Activity #3: Editing CSS</h3>
             <p style="color: #333">Here's a list of <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">named colors in CSS</a>. Change this line to any color you like!</p>
-            <br />
+            <br>
             <p style="background-color: darkseagreen;">You can also add or change a background color to elements. What's your favorite color?</p>
-            <br />
+            <br>
             <p style="background-color: sandybrown; border-style: dashed; border-color: seagreen; border-width: 10px;">You can create a lot of visual interest with just a border and a background. Refer to the Mozilla documentation to learn about all the possibilities for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">borders</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" target="_blank">backgrounds</a> and get creative here!</p>
-            <br />
+            <br>
             <p style="border: 5px outset pink; outline: 5px solid khaki; box-shadow: 0 0 0 20px skyblue; border-radius: 5px; padding: 10px; margin: 10px; outline-offset: 10px">I have a border, an outline, and a box shadow. Cool right?? Check out my styles in the inspector! What looks fun to change?</p>
-            <br />
+            <br>
             <p style="cursor: grab">You can style so many things with CSS, including the cursor. Hover over me to see!</p>
           </div>
           <p>
@@ -415,18 +394,18 @@
             the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">extended reference</a>. When you come across an unfamiliar
             property in the wild, you can search for it on MDN to learn more.
           </p>
-          <details class="todo">
+          <details class="todo" open="">
             <summary>I was able to change some CSS styles!</summary>
             <h1>Keep Exploring!</h1>
             <p>
               The web really is a wild, continously expansive place. But it doesn't mean you need years of training or a degree in Computer Science to interact with it in a personal way.
-              Through this workbook, you learned how to use the Web Inspector to take a closer look at some of the materials that make up the web: HTML & CSS. More than just looking, you 
+              Through this workbook, you learned how to use the Web Inspector to take a closer look at some of the materials that make up the web: HTML &amp; CSS. More than just looking, you 
               reached into the inner workings and made this page your own!
-              <br />
-              <br />
+              <br>
+              <br>
               You can download this page with all your wonderful additions by clicking     <a onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)" href="#" download="page.html">here!</a>
             </p>
-            <p style="text-align: center; margin-bottom: 1ch; margin-top: 5ch;">Here's a callback to where we started. <br /> Taking what you've learned,</p>
+            <p style="text-align: center; margin-bottom: 1ch; margin-top: 5ch;">Here's a callback to where we started. <br> Taking what you've learned,</p>
             <h2 style="margin-top: 0; padding-top: 0;">How would you describe to someone how websites are made?</h2>
             <div class="paper">
               <div class="paper-content">
@@ -442,9 +421,9 @@
             <p style="margin-top: 6ch">
               There's so much more to discover about the web and how it's made, and even more ways to express yourself through it. 
               In the spirit of a weirder, freer, built-by-you webscape, here are some links to get your started:
-              <br />
-              <br />
-              <ul class="suggestion">
+              <br>
+              <br>
+              </p><ul class="suggestion">
                 <li>If you want to learn more about the vibe of the web in the 90s while practicing your HTML and CSS, check out Jackie Liu's 
                   <a href="https://www.zinesbyjackie.com/activities/build-an-under-construction-page" target="_blank"><em>Build an Under Construction Mini Site</em></a> zine.</li>
                 <li>If you have a specific type of website in mind that you want to make, try Glitch's <a href="https://glitch.com/edit/#!/remix/glitch-hello-website" target="_blank"><em>Hello Website</em></a> starter project. Their <a href="https://glitch.com/edit/#!/remix/glitch-in-bio" target="_blank">DIY <em>Link in Bio</em></a> project is also excellent.</li>
@@ -452,10 +431,10 @@
                 <li>If you're intrigued by CSS and want to feel <strong>a lot</strong> more confident with it, I highly recommend Julia Evan's <a href="https://wizardzines.com/zines/css/" target="_blank"><em>Hell Yes! CSS!</em></a> zine</li>
                 <li>If you're interested in blogging while working on your HTML and CSS chops, <a href="https://zonelets.net" target="_blank">Zonelets</a> by Marina Kittaka is a great place to go.</li>
                 <li>If all you want is a place to share your quick thoughts, you would like <a href="https://thoughts.page/" target="_blank">thoughts.page</a> built by Wesley Aptekar-Cassels.</li>
-                <li>If you're trying to get really artsy with your web skills, The Coding Train's <a href="https://www.youtube.com/watch?v=HerCR8bw_GE&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=1" target="_blank"><em>Programming with p5.js</em></a> series is funner than you can even imagine.</li>
+                <li>If you're trying to get really artsy with your web skills, The Coding Train's <a href="https://www.youtube.com/watch?v=HerCR8bw_GE&amp;list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&amp;index=1" target="_blank"><em>Programming with p5.js</em></a> series is funner than you can even imagine.</li>
                 <li>If a whole course on making web graphics seems like too much but you want to dip your toes, head on over to <a href="https://cafe-robot.co/" target="_blank">Cafe Robot</a> and try their quick coding experiences.</li>
               </ul>
-            </p>
+            <p></p>
             <p style="margin-top: 5ch">Thank you for spending time with my little project! If you have a minute, I would love to hear from you. You can share your thoughts through this <a href="https://airtable.com/shrVC8oSBwVrKFDPB" target="_blank">super short form.</a></p>
           </details>
         </details>
@@ -491,5 +470,37 @@
         theme: 'light-border',
       });
     </script>
-  </body>
-</html>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+
+
+<iframe id="nr-ext-rsicon" style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent;"></iframe></body></html>
