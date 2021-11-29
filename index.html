@@ -12,6 +12,12 @@
       function addTextareaContent(e) {
         e.textContent = e.value;
       }
+
+      function openDetails(e) {
+        if (e.open) {
+          window.scrollBy(0, 100);
+        }
+      }
     </script>
     <link
       rel="stylesheet"
@@ -105,7 +111,7 @@
         <br />
       </p>
     </div>
-    <details class="todo">
+    <details class="todo" ontoggle="openDetails(this)">
       <summary>I was able to open the Web Inspector!</summary>
       <p style="margin-top: 5%">You should see something more or less like this:</p>
         <img
@@ -169,7 +175,7 @@
           <img src="https://i.ibb.co/xjk0RGX/Screen-Shot-2021-11-14-at-10-49-16-AM.png" />
         </p>
       </div>
-      <details class="todo">
+      <details class="todo" ontoggle="openDetails(this)">
         <summary>I was able to change some content on a web page!</summary>
         <h1>Exploring Structure: HTML</h1>
         <p>
@@ -373,7 +379,7 @@
           </p>
           What can you try to change out there in the wild wild web?
         </div>
-        <details class="todo">
+        <details class="todo" ontoggle="openDetails(this)">
           <summary>I was able to edit some HTML tags!</summary>
           <h2>What website(s) did try editing?</h2>
           <div class="paper" style="min-height: 150px;">
@@ -441,7 +447,7 @@
             the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">extended reference</a>. When you come across an unfamiliar
             property in the wild, you can search for it on MDN to learn more.
           </p>
-          <details class="todo">
+          <details class="todo" ontoggle="openDetails(this)">
             <summary>I was able to change some CSS styles!</summary>
             <h1>Keep Exploring!</h1>
             <p>
