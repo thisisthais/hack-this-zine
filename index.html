@@ -111,7 +111,7 @@
         <br />
       </p>
     </div>
-    <details class="todo" ontoggle="openDetails(this)">
+    <details class="todo" ontoggle="openDetails(this)" open>
       <summary>I was able to open the Web Inspector!</summary>
       <p style="margin-top: 5%">You should see something more or less like this:</p>
         <img
@@ -175,7 +175,7 @@
           <img src="https://i.ibb.co/xjk0RGX/Screen-Shot-2021-11-14-at-10-49-16-AM.png" />
         </p>
       </div>
-      <details class="todo" ontoggle="openDetails(this)">
+      <details class="todo" ontoggle="openDetails(this)" open>
         <summary>I was able to change some content on a web page!</summary>
         <h1>Exploring Structure: HTML</h1>
         <p>
@@ -379,7 +379,7 @@
           </p>
           What can you try to change out there in the wild wild web?
         </div>
-        <details class="todo" ontoggle="openDetails(this)">
+        <details class="todo" ontoggle="openDetails(this)" open>
           <summary>I was able to edit some HTML tags!</summary>
           <h2>What website(s) did try editing?</h2>
           <div class="paper" style="min-height: 150px;">
@@ -439,7 +439,14 @@
             <br />
             <p style="border: 5px outset pink; outline: 5px solid khaki; box-shadow: 0 0 0 20px skyblue; border-radius: 5px; padding: 10px; margin: 10px; outline-offset: 10px">I have a border, an outline, and a box shadow. Cool right?? Check out my styles in the inspector! What looks fun to change?</p>
             <br />
-            <p style="cursor: grab">You can style so many things with CSS, including the cursor. Hover over me to see!</p>
+            <p style="cursor: grab">You can style so many things with CSS, including the cursor. Hover over me to see! Can you change this hover cursor to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor" target="_blank">a different one?</a></p>
+            <p>CSS is also used for more structural properties like whether an element is displayed or not. Try using the Styles tab to toggle the visibility of the leaves, maybe you'll find something cool!</p>
+            <div class="leafBox">
+              <img src="./images/snail.png" style="visibility: visible; right: 60px; top: 60px; width: 10%;" />
+              <img src="./images/leaf.png" style="visibility: visible; left: 0;"/>
+              <img src="./images/leaf.png" style="visibility: visible; left: 50%; margin-left: -87px"/>
+              <img src="./images/leaf.png" style="visibility: visible; right: 0;"/>
+            </div>
           </div>
           <p>
             Even people who have been coding for the web for years don't know all the possible CSS properties. When in doubt, you can always refer to this 
@@ -447,7 +454,7 @@
             the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">extended reference</a>. When you come across an unfamiliar
             property in the wild, you can search for it on MDN to learn more.
           </p>
-          <details class="todo" ontoggle="openDetails(this)">
+          <details class="todo" ontoggle="openDetails(this)" open>
             <summary>I was able to change some CSS styles!</summary>
             <h1>Keep Exploring!</h1>
             <p>
